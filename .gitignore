@@ -130,3 +130,5 @@ dist
 .pnp.*
 
 .vs
+.vscode/
+ffcoders-page.code-workspace
