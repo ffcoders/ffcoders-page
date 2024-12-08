@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './IdeaForm.scss';
 
 const IdeaForm = ({ onSubmit }) => {
@@ -25,14 +25,13 @@ const IdeaForm = ({ onSubmit }) => {
     }
     if (idea.trim()) {
       setIsSubmitted(true);
-      // Handle form submission logic here
       console.log('Form submitted:', { email, idea });
       if (onSubmit) {
         onSubmit();
       }
       setTimeout(() => {
         setShowThankYou(true);
-      }, 1000); // Show thank you message after form submission
+      }, 1000);
     }
   };
 
@@ -73,7 +72,7 @@ const IdeaForm = ({ onSubmit }) => {
           </button>
         </div>
       </form>
-      {showThankYou && <p className="thank-you">Thank you, this was sent somewhere.</p>}
+      {showThankYou && isSubmitted && <p className="thank-you">Thank you, this was sent somewhere.</p>}
     </div>
   );
 };
