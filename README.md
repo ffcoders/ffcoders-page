@@ -25,5 +25,7 @@ The main dependencies used in this project are:
 
 To run this project locally, follow these steps:
 
-1. Clone the repository:
+1. Clone the repository: https://github.com/ffcoders/ffcoders-page.git
+2. Install the dependencies in your side, run: npm install
+3. Start the development server, run: npm start
    
