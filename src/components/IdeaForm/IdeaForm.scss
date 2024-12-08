@@ -3,16 +3,16 @@
   margin: 0 auto;
   padding: 20px;
   border-radius: 8px;
-  opacity: 0; // Initially hidden
-  transform: translateY(20px); // Start position for slide-up effect
-  transition: opacity 1s, transform 1s; // Fade-in and slide-up animation
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s, transform 1s;
   width: 50vw;
   min-width: 300px;
 }
 
 .idea-form.show {
-  opacity: 1; // Fade in
-  transform: translateY(0); // Slide up to the final position
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .form-group {
@@ -39,7 +39,7 @@ textarea {
 }
 
 textarea {
-  resize: none; // Disable resizing
+  resize: none;
   min-height: 100px;
 }
 
