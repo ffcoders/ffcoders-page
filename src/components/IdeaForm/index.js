@@ -31,7 +31,7 @@ const IdeaForm = ({ onSubmit }) => {
       }
       setTimeout(() => {
         setShowThankYou(true);
-      }, 1000);
+      }, 300);
     }
   };
 
