@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import './IdeaForm.scss';
 
 const IdeaForm = ({ onSubmit }) => {
@@ -75,6 +76,10 @@ const IdeaForm = ({ onSubmit }) => {
       {showThankYou && isSubmitted && <p className="thank-you">Thank you, this was sent somewhere.</p>}
     </div>
   );
+};
+
+IdeaForm.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
 };
 
 export default IdeaForm;
