@@ -9,7 +9,7 @@ const IdeaForm = ({ onSubmit }) => {
   const [showThankYou, setShowThankYou] = useState(false);
 
   const validateEmail = (email) => {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
     return re.test(String(email).toLowerCase());
   };
 
