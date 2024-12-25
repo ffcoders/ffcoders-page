@@ -9,8 +9,8 @@ const IdeaForm = ({ onSubmit }) => {
   const [showThankYou, setShowThankYou] = useState(false);
 
   const validateEmail = (email) => {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
-    return re.test(String(email).toLowerCase());
+    const efficientRe = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+    return efficientRe.test(String(email).toLowerCase());
   };
 
   const handleSubmit = (event) => {
